@@ -53,13 +53,10 @@ form label {
   </head>
   <body>
     <div class="container">
-      <!-- yukardaki geri sayım yapan kısmı burda yazdık -->
       <h1><span id="saat">00</span>:<span id="dakika">00</span>:<span id="saniye">00</span></h1>
-      <!-- formun number giriş tipiyle sayısal değerler için 3 girdi aldık -->
       <form>
         <label>
           Saat
-          <!-- sayısal değerler için min ve max değerleri belirttik bir saate uygun olarak -->
           <input id="girilenSaat" type="number" min="0" max="59" value="00" />
         </label>
         <label>
@@ -71,13 +68,11 @@ form label {
           <input id="girilenSaniye" type="number" min="0" max="59" value="00" />
         </label>
       </form>
-       <!-- kaydetme ve iptal etmme butonlarımızı oluşturduk yan yana -->
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
           <button id="baslat"  class="btn btn-danger" style="margin:10px; padding:10px">Başlat</button>
           <button id="iptal" class="btn btn-warning" style="margin:10px; padding:10px">İptal Et</button>
         </div>
     </div>
-    <!-- JavaScript dosyamızı da ekledik -->
     <script src="uygulama.js"></script>
   </body>
 </html>
